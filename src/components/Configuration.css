@@ -1,0 +1,355 @@
+ 
+.config-container {
+  background: #f6f1dc;
+  border-radius: 16px;
+  padding: 24px;
+  min-height: 500px;
+}
+
+ 
+.config-title-box {
+  background: #ff8c42;
+  color: white;
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.config-label {
+  margin-bottom: 12px;
+  font-weight: 500;
+  color: #333;
+}
+
+ 
+.color-box {
+  background: #ff8c42;
+  border-radius: 12px;
+  padding: 24px;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 280px;
+}
+
+ 
+.color-list-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.color-item {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.color-square {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+ 
+.color-dot {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 16px;
+  height: 16px;
+  background-color: #ff4d4d;
+  border: 2px solid #ff8c42;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+ 
+.add-color-btn {
+  width: 80px;
+  height: 80px;
+  background-color: #0000aa;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.add-color-btn .plus {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.add-color-btn small {
+  font-size: 9px;
+  margin-top: 4px;
+  text-transform: uppercase;
+}
+ 
+.add-color-modal {
+  background-color: #0015cc;  
+  padding: 40px;
+  border-radius: 20px;
+  width: 550px;
+  color: white;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+ 
+.modal-body-layout {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.preview-section {
+  flex: 0 0 120px;  
+}
+
+.input-section {
+  flex: 1;  
+}
+
+ 
+.color-box-preview-large {
+  width: 120px;
+  height: 120px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 2px solid rgba(255,255,255,0.2);
+}
+
+ 
+.hex-input-styled {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f5f5dc;  
+  color: #333;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Tombol Layout */
+.modal-actions-layout {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.btn-cancel-new {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-save-new {
+  background-color: #f5f5dc;
+  color: #1e1e1e;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Styling Modal Utama */
+.add-color-modal {
+  background-color: #0015cc;
+  padding: 35px;
+  border-radius: 15px;
+  width: 500px;
+  color: white;
+  position: relative;
+}
+
+.preview-group {
+  flex: 0 0 140px;
+  position: relative;
+  text-align: center;
+}
+
+.color-preview-big {
+  width: 140px;
+  height: 140px;
+  border-radius: 15px;
+  margin-top: 10px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+ 
+.color-picker-trigger {
+  position: absolute;
+  top: 30px; 
+  left: 0;
+  width: 140px;
+  height: 140px;
+  opacity: 0;  
+  cursor: pointer;
+}
+
+.click-info {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+.color-hint {
+  font-size: 11px;
+  margin-top: 15px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Input Teks Tetap Krem */
+.hex-input-styled {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f5f5dc;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+
+.btn-cancel { background-color: #ff4d4d; color: white; cursor: pointer; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; }
+.btn-save { background-color: #f5f5dc; color: #0015cc; cursor: pointer; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; }
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;  
+  gap: 20px;                 
+  margin-top: 40px;           
+}
+
+.btn-cancel {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;        
+}
+
+.btn-save {
+  background-color: #f5f5dc;
+  color: #0015cc;
+  padding: 12px 30px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;       
+}
+
+/* Efek saat tombol ditekan */
+.btn-cancel:active, .btn-save:active {
+  transform: scale(0.95);
+}
+
+/* Container Modal Biru Pekat */
+.add-color-modal {
+  background-color: #0015cc;
+  padding: 40px;
+  border-radius: 20px;
+  width: 450px;  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;  
+}
+
+.field-group-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input Krem Lebar */
+.hex-input-styled-full {
+  width: 100%;
+  padding: 15px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f5f5dc;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+/* Preview Area */
+.preview-container-stacked {
+  position: relative;
+  width: 130px;
+  height: 130px;
+}
+
+.color-preview-box {
+  width: 130px;
+  height: 130px;
+  border-radius: 15px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+}
+
+.invisible-picker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+ 
+.modal-footer-spaced {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;  
+  margin-top: 20px;
+}
+
+.btn-cancel-new {
+  background-color: #ff4d4d; /* Merah */
+  color: white;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.btn-save-new {
+  background-color: #f5f5dc; /* Krem */
+  color: #0015cc;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  min-width: 100px;
+}
+
+.btn-cancel-new:hover, .btn-save-new:hover {
+  filter: brightness(0.9);
+}

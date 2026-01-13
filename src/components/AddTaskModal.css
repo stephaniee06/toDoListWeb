@@ -1,0 +1,91 @@
+ 
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+ 
+.add-color-modal {
+  background: #0000aa;  
+  width: 450px;
+  padding: 30px;
+  border-radius: 12px;
+  color: white;
+  font-family: sans-serif;
+}
+
+.input-group, .preview-section {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.add-color-modal label {
+  font-size: 12px;
+  color: #ccc;
+}
+
+.add-color-modal input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #fdf5e6;  
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+}
+
+ 
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.no-preview {
+  font-size: 14px;
+  color: #ffffff;
+  font-style: italic;
+  opacity: 0.8;
+}
+
+ 
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.modal-actions button {
+  padding: 8px 25px;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-actions .cancel {
+  background: #f44336;  
+  color: white;
+}
+
+.modal-actions .save {
+  background: #fdf5e6;  
+  color: #0000aa;
+}
+
+.modal-actions button:hover {
+  opacity: 0.9;
+}
